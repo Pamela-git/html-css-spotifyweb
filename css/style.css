@@ -8,7 +8,7 @@
 
 .item {
   background-color: lightblue;
-  border: 1px solid black;
+  border: 1px solid white;
 
 }
 
@@ -30,17 +30,27 @@
   width: 80%;
   height: calc(100vh - 100px);
   overflow: auto;
+
 }
 
 /* header fisso */
 header {
-  position: fixed;
+  /* position: fixed;
   left: 0
   top:0;
   z-index: 900;
-  width: 100%;
+  /* width: 100%; */
   border: 1px solid black;
   height: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.upgrade {
+  margin: 20px 20px;
+  border-radius: 40px;
+  border: 1px solid white;
+  padding: 20px;
 }
 
 /* regole footer */
@@ -73,6 +83,10 @@ footer {
   display: block;
 }
 
-.inferiore img {
-  max-width: 10%;
+#download img {
+  max-width: 5%;
+}
+
+#profilo img {
+  max-width: 8%;
 }
