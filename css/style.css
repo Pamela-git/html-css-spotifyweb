@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* debug */
+
+.item {
+  background-color: lightblue;
+  border: 1px solid black;
+
+}
+
+/* fine debug */
+
+/* regole flex per macrostruttura */
+.container-flex {
+  display: flex;
+}
+
+/* flex sinistro menu */
+.sx {
+  width: 20%;
+  min-height: 100%;
+}
+
+/* flex destro contenuto principale */
+.dx {
+  width: 80%;
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+/* header fisso */
+header {
+  position: fixed;
+  left: 0
+  top:0;
+  z-index: 900;
+  width: 100%;
+  border: 1px solid black;
+  height: 100px;
+}
+
+/* regole footer */
+footer {
+  height: 100px;
+  background-color: lightpink;
+}
+
+/* regole flex per colonna sinistra */
+.flex-column  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.logo img {
+  max-width: 20%;
+}
+
+.home img {
+  max-width: 10%;
+}
+
+.home a {
+  display: block;
+}
+
+.playlist a {
+  display: block;
+}
+
+.inferiore img {
+  max-width: 10%;
+}
