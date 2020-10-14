@@ -107,12 +107,87 @@ footer {
   max-width: 10%;
 }
 
+/* sezione menù orizzontale (blocco destro) */
 #select {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
 }
 
 #select li {
   display: inline-block;
   margin: 0 10px;
+}
+
+/* sezione album */
+
+.general-album {
+  padding: 20px 20px;
+}
+
+.album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  text-align: center;
+}
+.card img {
+ max-width: 150px;
+}
+
+.card span {
+  display: block;
+}
+
+.spazio {
+  margin-left: 25px;
+}
+
+/* sezione intermedia card */
+
+.foryou {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* sezione inferiore con card rotonde */
+
+.radius {
+  border-radius: 50%;
+}
+
+.circle span {
+  text-align: center;
+}
+
+@media all and (min-width: 769px) and (max-width: 1080px) {
+
+  .card {
+    width: 25%;
+  }
+
+  .album {
+    justify-content: flex-start;
+  }
+
+  .spazio {
+    margin-left: 0;
+  }
+
+
+}
+
+@media all and (max-width: 768px) {
+  .card {
+    width: 50%;
+  }
+
+  .spazio {
+    margin-left: 0;
+  }
+
 }
