@@ -70,15 +70,12 @@ header {
   border-radius: 40px;
   border: 1px solid white;
   padding: 20px;
+  transition: transform 0.1s;
 }
 
 .bottone-upgrade:hover {
-  margin: 10px 10px;
-  cursor: pointer;
+  transform: scale(1.1);
 }
-
-/* regole footer */
-
 
 /* regole flex per colonna sinistra */
 .flex-column  {
@@ -244,11 +241,36 @@ footer {
   margin: 0 10px;
 }
 
+#hover-white:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.far {
+  margin: 0 10px;
+}
+.far:hover {
+  color: white;
+  cursor: pointer;
+}
+.fas:hover {
+  color: white;
+  cursor: pointer;
+}
+
 .mid {
   text-align: center;
   color: white;
 }
 
+.fa-play-circle {
+ transition: transform 0.1s;
+}
+
+.fa-play-circle:hover {
+  transform: scale(1.5);
+}
 .linea {
   display: inline-block;
   width: 250px;
