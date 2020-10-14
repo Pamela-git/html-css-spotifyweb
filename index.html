@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <link rel="stylesheet" href="css/style.css">
@@ -13,10 +14,10 @@
         <div class="flex-column">
           <div class="logo">
             <img src="img/logo-small.svg" alt="">
-            <a href="#">Spotify</a>
+            <a class="styletext" href="#">Spotify</a>
 
             <nav class="home">
-              <a href="#"> <img src="img/home.svg" alt=""> Home</a>
+              <a class="styletext little bordo-green"href="#"> <img src="img/home.svg" alt=""> Home</a>
               <a href="#"> <img src="img/search.svg" alt=""> Cerca</a>
               <a href="#"> <img src="img/libreria.svg" alt=""> La tua libreria</a>
             </nav>
@@ -43,12 +44,8 @@
             </div>
 
             <div id="profilo">
-              <a href="#"> <img src="img/profile.svg" alt=""> Jhon Doe</a>
+              <a class="styletext little" href="#"> <img src="img/profile.svg" alt=""> Jhon Doe</a>
             </div>
-
-
-
-
           </div>
 
         </div>
@@ -60,7 +57,7 @@
         <header>
           <div class="upgrade">
             <div class="bottone-upgrade">
-              <a href="#">Effettua l'upgrade</a>
+              <a class="styletext little" href="#">Effettua l'upgrade</a>
             </div>
 
 
@@ -71,12 +68,12 @@
         <!-- sezione menù orizzontale colonna destra -->
           <nav id="select">
             <ul>
-              <li> <a href="#">in evidenza</a></li>
-              <li><a href="#">podcast</a></li>
-              <li><a href="#">classifiche</a></li>
-              <li><a href="#">generi e mood</a></li>
-              <li><a href="#">nuove uscite</a></li>
-              <li><a href="#">scopri</a></li>
+              <li class="hover-green"> <a href="#">in evidenza</a></li>
+              <li class="hover-green"><a href="#">podcast</a></li>
+              <li class="hover-green"><a href="#">classifiche</a></li>
+              <li class="hover-green"><a href="#">generi e mood</a></li>
+              <li class="hover-green"><a href="#">nuove uscite</a></li>
+              <li class="hover-green"><a href="#">scopri</a></li>
             </ul>
           </nav>
 
@@ -95,32 +92,32 @@
             </div>
 
             <div class="card">
-              <img src="img/metal_lifting.jpg" alt="heavy metal">
-              <span>Heavy Metal</span>
+              <img src="img/stranger.jpeg" alt="stranger things">
+              <span>Stranger Things vol.1 (a netflix original series soundtrack)</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card">
-              <img src="img/metal_lifting.jpg" alt="heavy metal">
-              <span>Heavy Metal</span>
+              <img src="img/aquietplace.jpeg" alt="a quiet placel">
+              <span>A quiet Place</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card">
-              <img src="img/metal_lifting.jpg" alt="heavy metal">
-              <span>Heavy Metal</span>
+              <img src="img/split.jpeg" alt="split">
+              <span>Split</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card">
-              <img src="img/metal_lifting.jpg" alt="heavy metal">
-              <span>Heavy Metal</span>
+              <img src="img/cure.jpeg" alt="a cure for wellness">
+              <span>A cure for wellness</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card">
-              <img src="img/metal_lifting.jpg" alt="heavy metal">
-              <span>Heavy Metal</span>
+              <img src="img/sinister.jpeg" alt="sinister">
+              <span>Sinister</span>
               <span>Subtitle</span>
             </div>
           </div>
@@ -134,14 +131,14 @@
 
           <div class="foryou">
             <div class="card">
-              <img src="img/metal_lifting.jpg" alt="heavy metal">
-              <span>Heavy Metal</span>
+              <img src="img/radar.jpeg" alt="release radar">
+              <span>Release Radar</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card spazio">
-              <img src="img/metal_lifting.jpg" alt="heavy metal">
-              <span>Heavy Metal</span>
+              <img src="img/mixdaily.jpeg" alt="daily mix">
+              <span>Daily Mix 1</span>
               <span>Subtitle</span>
             </div>
           </div>
@@ -156,14 +153,14 @@
 
           <div class="foryou">
             <div class="card circle">
-              <img class="radius" src="img/metal_lifting.jpg" alt="heavy metal">
-              <span>Heavy Metal</span>
+              <img class="radius" src="img/youg.jpeg" alt="lana del rey">
+              <span>Lana del Rey</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card spazio circle">
-              <img class="radius" src="img/metal_lifting.jpg" alt="heavy metal">
-              <span>Heavy Metal</span>
+              <img class="radius" src="img/einaudi.jpeg" alt="einaudi">
+              <span>Ludovico Einaudi</span>
               <span>Subtitle</span>
             </div>
           </div>
@@ -175,7 +172,49 @@
 
 
     <footer>
+      <div class="left">
+        <img src="img/sinister.jpeg" alt="sinister">
+        <div class="left-text">
+          <span>Sinister</span>
+          <span>Brano Name</span>
+        </div>
+        <div class="left-text icons">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+      </div>
 
+      <div class="mid">
+        <i class="fas fa-random"></i>
+        <i class="fas fa-step-backward"></i>
+        <i class="far fa-play-circle"></i>
+        <i class="fas fa-step-forward"></i>
+        <i class="fas fa-redo"></i>
+
+        <div class="play-line">
+          <span>0:25</span>
+          <div class="linea">
+            <div class="over-linea">
+
+            </div>
+
+          </div>
+          <span>4:35</span>
+
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="play-line">
+          <span><i class="fas fa-list-ul"></i> <i class="fas fa-tv"></i> <i class="fas fa-volume-up"></i></span>
+          <div class="linea">
+            <div class="over-linea">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </footer>
 
 
