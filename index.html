@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <link rel="stylesheet" href="css/style.css">
@@ -14,6 +14,24 @@
       <div class="item sx">
         <div class="flex-column">
           <!-- blocco logo, home, playlist -->
+          <div class="xs-logo">
+            <img src="img/logo-small.svg" alt="">
+            <nav class="home">
+            <a class="styletext little bordo-green"href="#"> <img src="img/home.svg" alt=""></a>
+            <a href="#"> <img src="img/search.svg" alt=""></a>
+            <a href="#"> <img src="img/libreria.svg" alt=""></a>
+            </nav>
+          </div>
+
+          <div class="xs-inferiore">
+            <div id="download">
+              <a href="#"> <img src="img/download.svg" alt=""></a>
+            </div>
+            <div id="profilo">
+              <a class="styletext little" href="#"> <img src="img/profile.svg" alt=""></a>
+            </div>
+          </div>
+
           <div class="logo">
             <img src="img/logo-small.svg" alt="">
             <a class="styletext" href="#">Spotify</a>
@@ -86,38 +104,67 @@
 
           <div class="album">
             <div class="card">
-              <img src="img/metal_lifting.jpg" alt="heavy metal">
+              <div class="play-button">
+                <img src="img/metal_lifting.jpg" alt="heavy metal">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>Heavy Metal</span>
               <span>Subtitle</span>
-
             </div>
 
             <div class="card">
-              <img src="img/stranger.jpeg" alt="stranger things">
+              <div class="play-button">
+                <img src="img/stranger.jpeg" alt="stranger things">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>Stranger Things vol.1 (a netflix original series soundtrack)</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card">
-              <img src="img/aquietplace.jpeg" alt="a quiet placel">
+              <div class="play-button">
+                <img src="img/aquietplace.jpeg" alt="a quiet placel">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>A quiet Place</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card">
-              <img src="img/split.jpeg" alt="split">
+              <div class="play-button">
+                <img src="img/split.jpeg" alt="split">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>Split</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card">
-              <img src="img/cure.jpeg" alt="a cure for wellness">
+              <div class="play-button">
+                <img src="img/cure.jpeg" alt="a cure for wellness">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>A cure for wellness</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card">
-              <img src="img/sinister.jpeg" alt="sinister">
+              <div class="play-button">
+                <img src="img/sinister.jpeg" alt="sinister">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>Sinister</span>
               <span>Subtitle</span>
             </div>
@@ -133,13 +180,23 @@
 
           <div class="foryou">
             <div class="card">
-              <img src="img/radar.jpeg" alt="release radar">
+              <div class="play-button">
+                <img src="img/radar.jpeg" alt="release radar">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>Release Radar</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card spazio">
-              <img src="img/mixdaily.jpeg" alt="daily mix">
+              <div class="play-button">
+                <img src="img/mixdaily.jpeg" alt="daily mix">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>Daily Mix 1</span>
               <span>Subtitle</span>
             </div>
@@ -156,13 +213,23 @@
 
           <div class="foryou">
             <div class="card circle">
-              <img class="radius" src="img/youg.jpeg" alt="lana del rey">
+              <div class="play-button">
+                <img class="radius" src="img/youg.jpeg" alt="lana del rey">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>Lana del Rey</span>
               <span>Subtitle</span>
             </div>
 
             <div class="card spazio circle">
-              <img class="radius" src="img/einaudi.jpeg" alt="einaudi">
+              <div class="play-button">
+                <img class="radius" src="img/einaudi.jpeg" alt="einaudi">
+                <div class="icon-play-button">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
               <span>Ludovico Einaudi</span>
               <span>Subtitle</span>
             </div>
@@ -179,42 +246,54 @@
     <footer>
       <!-- blocco footer sinistro -->
       <div class="left">
-        <img src="img/sinister.jpeg" alt="sinister">
-        <div class="left-text">
-          <span>Sinister</span>
-          <span id="hover-white">Brano Name</span>
+        <div class="left-text flex-sx">
+          <div class="foto-album">
+            <img src="img/sinister.jpeg" alt="sinister">
+          </div>
+
+          <div class="">
+            <span>Sinister</span>
+            <span id="hover-white">Brano Name</span>
+          </div>
+
+          <div class="left-text icons">
+            <i class="far fa-heart"></i>
+            <i class="far fa-folder"></i>
+          </div>
         </div>
-        <div class="left-text icons">
-          <i class="far fa-heart"></i>
-          <i class="far fa-folder"></i>
-        </div>
+
       </div>
 
       <!-- blocco footer mid -->
       <div class="mid">
         <!-- bottoni playbar -->
-        <i class="fas fa-random"></i>
-        <i class="fas fa-step-backward"></i>
-        <i class="far fa-play-circle"></i>
-        <i class="fas fa-step-forward"></i>
-        <i class="fas fa-redo"></i>
-        <!-- playline -->
-        <div class="play-line">
-          <span>0:25</span>
-          <div class="linea">
-            <div class="over-linea">
-            </div>
+        <div class="mid-flex">
+          <div class="icone">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo"></i>
           </div>
-          <span>4:35</span>
-
+          <!-- playline -->
+          <div class="play-line">
+            <span>0:25</span>
+            <div class="linea">
+              <div class="over-linea">
+              </div>
+            </div>
+            <span>4:35</span>
+          </div>
         </div>
       </div>
 
       <!-- blocco footer destro -->
       <div class="right">
-        <div class="play-line">
-          <span><i class="fas fa-list-ul"></i> <i class="fas fa-tv"></i> <i class="fas fa-volume-up"></i></span>
-          <div class="linea">
+        <div class="play-line flex-dx">
+          <div class="icone-dx">
+            <span><i class="fas fa-list-ul"></i> <i class="fas fa-tv"></i> <i class="fas fa-volume-up"></i></span>
+          </div>
+          <div class="linea min">
             <div class="over-linea">
             </div>
           </div>

@@ -11,7 +11,6 @@ body {
 /* regole flex per macrostruttura */
 .container-flex {
   display: flex;
-  height: calc(100vh - 100px);
 }
 
 /* regola generale hover link */
@@ -35,6 +34,10 @@ a:hover {
   height: calc(100vh - 140px);
 }
 
+.logo {
+  max-height: 70%;
+  flex-shrink: 2;
+}
 .logo img {
   max-width: 20%;
 }
@@ -46,7 +49,7 @@ a:hover {
 .styletext{
   color: white;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .little {
@@ -67,6 +70,7 @@ a:hover {
 
 .playlist {
   margin: 10px 0;
+  max-height: 60%;
   overflow-y: auto;
 }
 
@@ -74,6 +78,9 @@ a:hover {
   display: block;
 }
 
+#download {
+ flex-grow: 1;
+}
 #download {
   border-bottom: 1px solid white;
   padding-bottom: 5px;
@@ -86,6 +93,9 @@ a:hover {
   max-width: 10%;
 }
 
+.xs-logo, .xs-inferiore {
+  display:none;
+}
 
 /* flex destro contenuto principale */
 .dx {
@@ -93,6 +103,7 @@ a:hover {
   overflow: auto;
   background-color: #141922;
   color: grey;
+  height: calc(100vh - 100px);
 }
 
 .dx h3 {
@@ -115,7 +126,7 @@ header {
   right: 0;
   top:0;
   z-index: 900;
-  width: calc(100vw - 190px);
+  width: calc(100% - 15%);
   border: 1px solid black;
   height: 100px;
   display: flex;
@@ -157,6 +168,26 @@ header {
 
 .Titolo {
   margin: 20px 0;
+}
+
+.play-button {
+  position: relative;
+}
+
+.icon-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.icon-play-button .fa-play-circle {
+  color: white;
+}
+
+.play-button:hover .icon-play-button {
+  display: block;
 }
 
 .card span:nth-child(2) {
@@ -221,14 +252,27 @@ footer {
   display: flex;
   justify-content: space-between;
   z-index: 999;
+  position: sticky;
+}
+
+.flex-sx, .mid-flex, .flex-dx {
+  display: flex;
+}
+
+.mid-flex {
+  flex-direction: column;
+}
+
+.flex-sx, .flex-dx {
+  justify-content: space-around;
+}
+
+.left, .right {
+  max-width: 20%;
 }
 
 .left img {
-  max-width: 10%;
-}
-
-.left-text {
-  display: inline-block;
+  max-width: 50px;
 }
 
 .left-text span:first-child {
@@ -237,7 +281,6 @@ footer {
 }
 .left-text span{
   display: block;
-  margin: 0 10px;
 }
 
 #hover-white:hover {
@@ -246,9 +289,6 @@ footer {
   text-decoration: underline;
 }
 
-.far {
-  margin: 0 10px;
-}
 .far:hover {
   color: white;
   cursor: pointer;
@@ -291,14 +331,33 @@ footer {
 }
 
 .right {
-  margin-top: 20px;
   color: white;
+}
+
+.min {
+  width: 100px;
 }
 
 
 
 
 /* media query */
+
+@media all and (max-width: 1080px) {
+  .sx {
+    padding: 0;
+  }
+
+  .styletext{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .little {
+    font-size: 10px;
+  }
+}
 @media all and (min-width: 769px) and (max-width: 1080px) {
 
   .card {
@@ -313,10 +372,10 @@ footer {
     margin-left: 0;
   }
 
-
 }
 
 @media all and (max-width: 768px) {
+
   .card {
     width: 50%;
   }
@@ -325,4 +384,58 @@ footer {
     margin-left: 0;
   }
 
+}
+
+@media all and (max-width: 480px) {
+  .sx {
+    width: 10%;
+    padding: 0;
+  }
+
+  .dx {
+    width: 90%;
+  }
+
+  .upgrade {
+    width: calc(100% - 10%);
+
+  }
+
+}
+
+/* menù a sinistra ridotto */
+@media all and (max-width: 530px) {
+
+  .sx {
+    padding: 0;
+  }
+
+  .flex-column  {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+  }
+
+  .logo, .inferiore {
+    display: none;
+  }
+
+  .xs-logo, .xs-inferiore {
+    display: block;
+  }
+
+  .xs-logo img {
+    max-width: 30%;
+  }
+
+  #download {
+    border-bottom: 0;
+  }
+  #download img{
+    max-width: 30%;
+  }
+
+  #profilo img {
+    max-width: 30%;
+  }
 }
