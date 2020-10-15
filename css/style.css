@@ -359,6 +359,7 @@ footer {
 
 /* media query */
 
+/* general */
 @media all and (max-width: 1080px) {
   .sx {
     padding: 0;
@@ -374,9 +375,9 @@ footer {
     font-size: 10px;
   }
 }
+
+/* md */
 @media all and (min-width: 769px) and (max-width: 1080px) {
-
-
 
   .card {
     width: 25%;
@@ -393,6 +394,7 @@ footer {
 
 }
 
+/* media s */
 @media all and (max-width: 768px) {
 
   .card {
@@ -405,7 +407,10 @@ footer {
 
 }
 
-@media all and (max-width: 480px) {
+
+/* menù a sinistra ridotto e allineamento su una sola riga delle card album (xs)*/
+@media all and (max-width: 530px) {
+
   .sx {
     width: 10%;
     padding: 0;
@@ -417,16 +422,6 @@ footer {
 
   .upgrade {
     width: calc(100% - 10%);
-
-  }
-
-}
-
-/* menù a sinistra ridotto */
-@media all and (max-width: 530px) {
-
-  .sx {
-    padding: 0;
   }
 
   .flex-column  {
@@ -444,17 +439,25 @@ footer {
   }
 
   .xs-logo img {
-    max-width: 40%;
+    max-width: 80%;
   }
 
   #download {
     border-bottom: 0;
   }
   #download img{
-    max-width: 40%;
+    max-width: 80%;
   }
 
   #profilo img {
-    max-width: 30%;
+    max-width: 80%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .spazio {
+    margin-left: 0;
   }
 }
