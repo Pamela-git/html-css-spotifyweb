@@ -413,8 +413,6 @@ footer {
   .spazio {
     margin-left: 0;
   }
-
-
 }
 
 /* media s */
@@ -429,7 +427,6 @@ footer {
   }
 
 }
-
 
 /* menù a sinistra ridotto e allineamento su una sola riga delle card album (xs)*/
 @media all and (max-width: 530px) {
