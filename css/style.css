@@ -357,6 +357,29 @@ footer {
   align-items: center;
 }
 
+/* pointer barra di riproduzione */
+.over-linea {
+  position: relative;
+}
+
+#pointer {
+  border-radius: 80%;
+  background-color: lightgrey;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  left: 85%;
+  top:0;
+  transform: translate(-20%, -20%);
+  display: none;
+}
+
+.over-linea:hover #pointer {
+  display: block;
+  cursor: pointer;
+}
+
+
 /* media query */
 
 /* general */
