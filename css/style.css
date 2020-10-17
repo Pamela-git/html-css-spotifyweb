@@ -252,6 +252,7 @@ footer {
   display: flex;
   z-index: 999;
   position: sticky;
+  align-items: center;
 }
 
 .left, .right, .mid{
@@ -279,6 +280,15 @@ footer {
 }
 .left-text span{
   display: block;
+  margin: 0 5px;
+}
+
+.fas {
+  margin: 0 5px;
+}
+
+.far {
+  margin: 0 5px;
 }
 
 #hover-white:hover {
@@ -344,6 +354,7 @@ footer {
 
 .flex-right {
   justify-content: flex-end;
+  align-items: center;
 }
 
 .icon-flex {
